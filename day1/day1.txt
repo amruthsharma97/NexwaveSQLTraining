@@ -1,0 +1,11 @@
+creating user
+
+create user <username> identified by <password>;
+
+granting permission
+
+grant dba to <username>;
+
+unlock account
+
+alter user <username> identified by <passsword> account unlock;
