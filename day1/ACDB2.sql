@@ -60,3 +60,22 @@ select first_name||' '||last_name as "Full_Name", monthly_discount from customer
 select first_name||' '||last_name as "Full_Name", main_phone_num||' '||street as "CONTACTS", monthly_discount as "DC" from customers where monthly_discount BETWEEN 11 AND 27;
 
 select * from customers where city='New York' and monthly_discount BETWEEN 30 and 40 or pack_id not in(8,19,30) and join_date<'01-JAN-2007';
+
+select last_name,pack_id,birth_date from customers where join_date between '12-DEC-2007' AND '17-APR-2010';
+
+select pack_id,strt_date,speed from packages where strt_date<'01-JAN-2007';
+
+select pack_id,speed,sector_id from packages where sector_id=1;
+
+select pack_id,speed,sector_id from packages where speed in('5Mbps','10Mbps');
+
+select last_name,monthly_discount from customers where city='Orlando';
+
+
+select last_name,pack_id from customers where pack_id = 9 or pack_id = 18;
+
+select last_name,pack_id from customers where pack_id in(9,18);
+
+select first_name,main_phone_num,secondary_phone_num from customers WHERE secondary_phone_num is null;
+
+select first_name,monthly_discount,pack_id from customers WHERE monthly_discount is null;
