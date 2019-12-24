@@ -88,5 +88,5 @@ Insert into tblLocations  values (2400,'8204 Arthur St',null,'London',null,'UK')
 Insert into tblRegions (REGION_ID,REGION_NAME) values (1,'Europe');
 Insert into tblRegions (REGION_ID,REGION_NAME) values (2,'Americas');
 Insert into tblRegions (REGION_ID,REGION_NAME) values (3,'Asia');
-Insert into tblRegions (REGION_ID,REGION_NAME) values (4,'Middle East and Africa')
+Insert into tblRegions (REGION_ID,REGION_NAME) values (4,'Middle East and Africa');
 Insert into tblRegions (Region_id,Region_name) values(5,'Australia');
