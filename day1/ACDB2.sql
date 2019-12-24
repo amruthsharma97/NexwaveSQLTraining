@@ -2,14 +2,11 @@ select * from customers;
 
 select pack_id, speed, monthly_payment from packages;
 
-SELECT strt_date, monthly_payment
-FROM   packages 
-
-
-
 select customer_id, first_name,last_name,main_phone_num,secondary_phone_num,pack_id from customers;
 
 select first_name,last_name,join_date,monthly_discount,monthly_discount+monthly_discount*0.2,monthly_discount-monthly_discount*0.20 from customers;
+
+select first_name,last_name,join_date,monthly_discount,monthly_discount*1.2,monthly_discount*0.8 from customers;
 
 select pack_id, speed, monthly_payment,strt_date,monthly_payment*12 as "YearlyPayment" from packages;
 
@@ -50,6 +47,8 @@ select first_name,monthly_discount from customers where first_name like '%e';
 
 select last_name,pack_id from customers where substr(last_name,2,1)='d';
 
+select last_name,pack_id from customers where last_name like '_d%';
+
 select * from customers where last_name like '%l%' or last_name like '%j%' or last_name like '%h%' order by monthly_discount desc;
 
 select first_name,join_date,monthly_discount,pack_id from customers WHERE INSTR(LOWER(last_name), 'a') = 0;
@@ -60,4 +59,4 @@ select first_name||' '||last_name as "Full_Name", monthly_discount from customer
 
 select first_name||' '||last_name as "Full_Name", main_phone_num||' '||street as "CONTACTS", monthly_discount as "DC" from customers where monthly_discount BETWEEN 11 AND 27;
 
-select * from customers where city='New York' and monthly_discount BETWEEN 30 and 40;
+select * from customers where city='New York' and monthly_discount BETWEEN 30 and 40 or pack_id not in(8,19,30) and join_date<'01-JAN-2007';
