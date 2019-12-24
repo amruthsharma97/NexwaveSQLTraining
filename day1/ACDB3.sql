@@ -71,3 +71,5 @@ select count(*) from customers where fax is null;
 select max(monthly_discount),min(monthly_discount),round(avg(monthly_discount),2) from customers;
 
 select state,count(customer_id) from customers group by state;
+
+select speed,avg(monthly_payment) from packages group by speed;
