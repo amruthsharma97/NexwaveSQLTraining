@@ -20,3 +20,14 @@ select employee_id,first_name,last_name,phone_number,department_id from tblemplo
 select first_name,last_name,hire_date,salary,salary*1.2 as "ANNUAL_SAL" from tblemployees;
 
 select first_name||' '||last_name "Name",phone_number||' - '|| email "CONTACT_DETAILS" from tblemployees;
+
+select distinct manager_id from tblemployees;
+
+select last_name||' '||job_id "EMPLOYEE_AND_TITLE" from tblemployees;
+
+
+SELECT first_name "FN",last_name "LN", salary "SAL",'HD'||' '||hire_date "HD" from tblemployees;
+
+select distinct salary from tblemployees;
+
+select distinct department_id,job_id from tblemployees;
