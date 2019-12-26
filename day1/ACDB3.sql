@@ -73,3 +73,31 @@ select max(monthly_discount),min(monthly_discount),round(avg(monthly_discount),2
 select state,count(customer_id) from customers group by state;
 
 select speed,avg(monthly_payment) from packages group by speed;
+
+select state,count(distinct city) "Number of States" from customers group by state;
+
+select sector_id,max(monthly_payment) "Max Monthly Payment By Sector" from packages group by sector_id;
+
+select pack_id,round(avg(monthly_discount),2) from customers group by pack_id;
+
+select pack_id,round(avg(monthly_discount),2) from customers WHERE pack_id in(22,13) group by pack_id;
+
+select speed,max(monthly_payment) "Highest Monthly Payment",min(monthly_payment) "Lowest Monthly Payment",avg(monthly_payment) "Average Monthly Payment" from packages group by speed;
+
+select pack_id,count(customer_id) from customers group by pack_id;
+
+select pack_id,count(customer_id) from customers where monthly_discount>20 group by pack_id;
+
+select pack_id,count(customer_id) from customers group by pack_id having count(customer_id)>100;
+
+select state,city,count(customer_id) from customers group by state,city order by state;
+
+select city,round(avg(monthly_discount),2) "Average Monthly Discount" from customers group by city order by city;
+
+select city,round(avg(monthly_discount),2) "Average Monthly Discount" from customers where monthly_discount>20 group by city order by city;
+
+select state,min(monthly_discount) "Lowest Monthly Discount" from customers group by state order by state;
+
+select state,min(monthly_discount) "Lowest Monthly Discount" from customers group by state having min(monthly_discount)>10 order by state;
+
+select speed,count(pack_id) from packages group by speed having count(pack_id)>8;
