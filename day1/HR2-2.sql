@@ -80,3 +80,88 @@ select manager_id,max(salary) from tblemployees where salary>10000 group by mana
 select job_id,min(salary) from tblemployees group by job_id having MIN(salary)>7000;
 
 select department_id,AVG(salary) from tblemployees where department_id between 20 and 80 group by department_id having avg(salary) >9000;
+
+
+select a.first_name,a.last_name,b.department_id,b.department_name from 
+tblemployees A 
+inner join 
+tbldepartments B on a.department_id=b.department_id;
+
+select a.first_name,a.last_name,b.department_id,b.department_name from 
+tblemployees A 
+inner join 
+tbldepartments B on a.department_id=b.department_id and b.department_id between 50 and 90;
+
+
+select a.department_name,b.city,b.state_province from
+tbldepartments A
+inner join
+tbllocations B
+on a.location_id=b.location_id;
+
+
+select a.first_name||' '||a.last_name FULL_NAME,b.department_name,c.city,c.state_province from 
+tblemployees A
+inner join
+tbldepartments B
+on b.department_id = a.department_id
+inner join
+tbllocations C
+on b.location_id=c.location_id;
+
+
+select a.first_name||' '||a.last_name FULL_NAME,b.department_name,c.city,c.state_province from 
+tblemployees A
+inner join
+tbldepartments B
+on b.department_id = a.department_id
+inner join
+tbllocations C
+on b.location_id=c.location_id and lower(a.last_name) like '%a%';
+
+select a.first_name,a.salary,b.grade_name JOB_GRADE from 
+tblemployees A
+inner join
+job_grades B
+on a.salary between b.min_salary and b.max_salary;
+
+select a.first_name,a.last_name,b.department_id,b.department_name from 
+tblemployees A 
+left OUTER join 
+tbldepartments B on a.department_id=b.department_id;
+
+select a.first_name,a.last_name,b.department_id,b.department_name from 
+tblemployees A 
+RIGHT OUTER join 
+tbldepartments B on a.department_id=b.department_id;
+
+
+select a.last_name,b.last_name MANAGER_LAST_NAME from 
+tblemployees A
+inner join
+tblemployees B
+on a.manager_id=b.employee_id;
+
+select a.last_name,b.last_name MANAGER_LAST_NAME from 
+tblemployees A
+inner join
+tblemployees B
+on a.manager_id=b.employee_id;
+
+select a.last_name,b.last_name MANAGER_LAST_NAME from 
+tblemployees A
+left OUTER join
+tblemployees B
+on a.manager_id=b.employee_id;
+
+select a.first_name,a.last_name,b.department_id from 
+tblemployees A
+inner join
+(select department_id from tblemployees where last_name = 'King') B
+on a.department_id=b.department_id;
+
+select a.first_name,a.last_name,a.salary from 
+tblemployees A
+inner join
+(select salary from tblemployees where employee_id = 103) B
+on a.salary<b.salary;
