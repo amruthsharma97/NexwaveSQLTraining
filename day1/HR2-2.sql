@@ -47,3 +47,36 @@ SELECT
     else 'D'
     end SALARY_GRADE
 FROM tblemployees;
+
+
+select min(last_name) from tblemployees;
+
+select max(last_name) from tblemployees;
+
+select count(*) from tblemployees;
+
+select count(commission_pct) from tblemployees;
+
+select count(*) from tblemployees where commission_pct is null;
+
+select max(salary),min(salary),round(avg(salary),2) from tblemployees;
+
+select department_id,round(avg(salary),2) from tblemployees group by department_id;
+
+select department_id,round(avg(salary),2) from tblemployees where department_id between 50 and 80 group by department_id;
+
+select job_id,count(employee_id) from tblemployees group by job_id;
+
+select job_id,count(employee_id) from tblemployees where salary>10000 group by job_id;
+
+select job_id,count(employee_id) from tblemployees group by job_id having count(employee_id)>2;
+
+select department_id,job_id,avg(salary) from tblemployees group by department_id,job_id;
+
+select manager_id,max(salary) from tblemployees group by manager_id;
+
+select manager_id,max(salary) from tblemployees where salary>10000 group by manager_id;
+
+select job_id,min(salary) from tblemployees group by job_id having MIN(salary)>7000;
+
+select department_id,AVG(salary) from tblemployees where department_id between 20 and 80 group by department_id having avg(salary) >9000;
