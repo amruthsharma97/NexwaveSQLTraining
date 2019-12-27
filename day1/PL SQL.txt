@@ -1,0 +1,16 @@
+declaration:-
+
+identifier [constant] datatype [not null] [:= | defaukt expr];
+
+eg;
+
+v_hiredate DATE;
+v_deptno NUMBER(2) not null := 10;
+v_fname varchar(20) := 'amruth';
+
+Properties of Identifiers
+->Must start with a letter
+->Maximum size is limited to 30 letters
+->Cannot contain whitespace characters
+->Can contain dollar sign ('$'), underscore ('_') and hash sign ('#')
+->Is case-insensitive
