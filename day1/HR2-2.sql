@@ -24,6 +24,8 @@ FROM tblemployees;
 
 select first_name,last_name,hire_date,trunc(((sysdate-hire_date)/365.25)*12) Months_Worked,EXTRACT(YEAR from sysdate)-EXTRACT(year from hire_date) Years_Worked from tblemployees;
 
+select first_name,last_name,hire_date,trunc(months_between(sysdate,hire_date)) Months_Worked,trunc(months_between(sysdate,hire_date)/12) Years_Worked from tblemployees;
+
 select first_name,last_name,hire_date,add_months(hire_date,12)-1 from tblemployees;
 
 select first_name,hire_date,round(hire_date,'YYYY') NEAREST_YEAR,round(hire_date,'MONTH') NEAREST_MONTH from tblemployees;
