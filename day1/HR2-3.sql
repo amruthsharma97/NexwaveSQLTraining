@@ -23,15 +23,15 @@ tblcountries
 on tbllocations.country_id = tblcountries.country_id;
 
 SELECT
-    job_id,department_id
+    distinct job_id,department_id
 FROM tblemployees where department_id=10
 UNION ALL
 SELECT
-    job_id,department_id
+    distinct job_id,department_id
 FROM tblemployees WHERE department_id=50
 UNION ALL
 SELECT
-    job_id, department_id
+    distinct job_id, department_id
 FROM tblemployees where department_id=20;
 
 
