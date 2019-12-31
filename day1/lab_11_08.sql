@@ -8,6 +8,10 @@ insert into dept(ID,NAME) values(DEPT_ID_SEQ.nextval,'Administration');
 
 select * from dept;
 
+
+create index nunq_index_name on dept (name);
+
+
 CREATE SYNONYM EMP2
 FOR employees;
 
