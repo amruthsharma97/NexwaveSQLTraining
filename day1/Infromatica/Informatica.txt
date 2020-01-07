@@ -1,0 +1,14 @@
+Transformation Classification
+a.Active
+b.Passive
+
+Expression Transformation -> Data Scrubbing -> Passive Transformation
+
+Aggregative Transformation -> Data Aggrigation -> Active Transformation
+
+Filter Transformation -> Data Filtering -> Active Transformation
+
+
+Target load planner
+
+we deside which pipline of the mapping executes first when we have multiple piplines
