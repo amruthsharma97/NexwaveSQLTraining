@@ -12,3 +12,17 @@ Filter Transformation -> Data Filtering -> Active Transformation
 Target load planner
 
 we deside which pipline of the mapping executes first when we have multiple piplines
+
+
+
+Types Of Lookup
+
+Connected And Un - Connected Lookup
+
+Connected Lookup allowes us to return multiple number of Ports(columns).
+
+Un - Connected Lookup allowes us to return only one Port(column).
+
+
+
+I our source is a database, informatica recommends us to use Source Qualifier for transformation

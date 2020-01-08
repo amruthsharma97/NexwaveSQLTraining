@@ -343,3 +343,483 @@ Parsing mapping m_CUSTOMER_ORDER_DATA...
 mapping  m_CUSTOMER_ORDER_DATA inserted.
 ------------------------------------------------------------------------------
 
+01/07/2020
+
+
+------------------------------------------------------------------------------
+01/06/2020 08:47:14 ** Saving... Repository EDW_DEV, Folder DATA_STRUCTURES
+------------------------------------------------------------------------------
+source SALES_TRANSACTIONS:EMPLOYEES inserted.
+source SALES_TRANSACTIONS:SALES_CUSTOMERS inserted.
+source SALES_TRANSACTIONS:TRANSACTIONS inserted.
+source SALES_TRANSACTIONS:MARKETING_CUSTOMERS inserted.
+source SALES_TRANSACTIONS:CUSTOMER_ORDERS inserted.
+source SALES_TRANSACTIONS:CURRENT_EMPLOYEES inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 08:49:53 ** Saving... Repository EDW_DEV, Folder DATA_STRUCTURES
+------------------------------------------------------------------------------
+source OPERATIONAL_DATA_STORE:ODS_TRANS_REVENUE inserted.
+source OPERATIONAL_DATA_STORE:ODS_DEALER_SALES inserted.
+source OPERATIONAL_DATA_STORE:ODS_DAILY_SALES_DATES inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 08:51:14 ** Saving... Repository EDW_DEV, Folder DATA_STRUCTURES
+------------------------------------------------------------------------------
+source ENTERPRISE_DATA_WAREHOUSE:FACTS_ATOMIC inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 08:52:24 ** Saving... Repository EDW_DEV, Folder DATA_STRUCTURES
+------------------------------------------------------------------------------
+source FlatFile:SALES_TRANSACTIONS inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 08:58:54 ** Saving... Repository EDW_DEV, Folder DATA_STRUCTURES
+------------------------------------------------------------------------------
+source FlatFile:DAILY_TRANSACTIONS inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 09:01:51 ** Saving... Repository EDW_DEV, Folder DATA_STRUCTURES
+------------------------------------------------------------------------------
+Target ODS_DAILY_SALES_DATES inserted.
+Target ODS_HIGH_INCOME_FEMALE inserted.
+Target ODS_HIGH_INCOME_SENIOR inserted.
+Target ODS_TRANSACTIONS inserted.
+Target ODS_TRANS_REVENUE inserted.
+Target ODS_REV_DATE_NAME_PAYMENT inserted.
+Target ODS_HIGH_INCOME_MALE inserted.
+Target ODS_DEALER_SALES inserted.
+Target ODS_CUST_TRANS_DETAIL inserted.
+Target ODS_CUST_DEALER_DETAIL inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 09:02:56 ** Saving... Repository EDW_DEV, Folder DATA_STRUCTURES
+------------------------------------------------------------------------------
+Target DIM_EMPLOYEES inserted.
+Target DIM_TIME inserted.
+Target SUM_PRODUCT_DATE inserted.
+Target SUM_PRODUCT_MONTH inserted.
+Target SUM_PRODUCT_DEALERSHIP inserted.
+Target FACTS_ATOMIC inserted.
+Target DIM_PRODUCTS inserted.
+Target DIM_DEALERSHIP inserted.
+Target DIM_CUSTOMERS inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 09:07:10 ** Saving... Repository EDW_DEV, Folder LOAD_ODS
+------------------------------------------------------------------------------
+Shortcut to source SALES_TRANSACTIONS:Shortcut_to_TRANSACTIONS inserted.
+Validating transformations of mapping m_CURRENT_TRANS_REVENUE...
+...transformation validation completed with no errors.
+Validating data flow of mapping m_CURRENT_TRANS_REVENUE...
+...mapping  has no Targets.
+...Mapping must have at least one loadable target.
+...there are data flow validation errors.
+Parsing mapping m_CURRENT_TRANS_REVENUE...
+...parsing completed with no errors.
+
+******** Mapping m_CURRENT_TRANS_REVENUE is INVALID ********
+mapping  m_CURRENT_TRANS_REVENUE inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 09:16:25 ** Saving... Repository EDW_DEV, Folder LOAD_ODS
+------------------------------------------------------------------------------
+Validating transformations of mapping m_CURRENT_TRANS_REVENUE...
+...transformation validation completed with no errors.
+Validating data flow of mapping m_CURRENT_TRANS_REVENUE...
+...mapping  has no Targets.
+...Transformation exp_TRANS_REVENUE has no output links.
+...Mapping must have at least one loadable target.
+...there are data flow validation errors.
+Parsing mapping m_CURRENT_TRANS_REVENUE...
+...parsing completed with no errors.
+
+******** Mapping m_CURRENT_TRANS_REVENUE is INVALID ********
+mapping  m_CURRENT_TRANS_REVENUE updated.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 09:30:34 ** Saving... Repository EDW_DEV, Folder LOAD_ODS
+------------------------------------------------------------------------------
+Shortcut to target Shortcut_to_ODS_TRANS_REVENUE inserted.
+Validating transformations of mapping m_CURRENT_TRANS_REVENUE...
+...transformation validation completed with no errors.
+Validating data flow of mapping m_CURRENT_TRANS_REVENUE...
+...data flow validation completed with no errors.
+Parsing mapping m_CURRENT_TRANS_REVENUE...
+...parsing completed with no errors.
+
+******** Mapping m_CURRENT_TRANS_REVENUE is VALID ********
+mapping  m_CURRENT_TRANS_REVENUE updated.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 11:22:14 ** Saving... Repository EDW_DEV, Folder LOAD_ODS
+------------------------------------------------------------------------------
+Shortcut to source SALES_TRANSACTIONS:Shortcut_to_CUSTOMER_ORDERS inserted.
+Shortcut to source FlatFile:Shortcut_to_SALES_TRANSACTIONS inserted.
+Validating transformations of mapping m_CUSTOMER_ORDER_DATA...
+Joiner Transformation jnr_CUSTOMER_ID_NO has empty condition.  Transformation is not valid.
+...there are invalid transformations.
+Validating data flow of mapping m_CUSTOMER_ORDER_DATA...
+...mapping  has no Targets.
+...Transformation jnr_CUSTOMER_ID_NO has no output links.
+...Mapping must have at least one loadable target.
+...Joiner jnr_CUSTOMER_ID_NO must have exactly two inputs.
+...there are data flow validation errors.
+Parsing mapping m_CUSTOMER_ORDER_DATA...
+...parsing completed with no errors.
+...Joiner jnr_CUSTOMER_ID_NO must have exactly two inputs.
+
+******** Mapping m_CUSTOMER_ORDER_DATA is INVALID ********
+mapping  m_CUSTOMER_ORDER_DATA inserted.
+------------------------------------------------------------------------------
+
+01/07/2020 Saving
+
+
+------------------------------------------------------------------------------
+01/07/2020 05:49:27 ** Saving... Repository EDW_DEV, Folder LOAD_ODS
+------------------------------------------------------------------------------
+Shortcut to target Shortcut_to_ODS_TRANSACTIONS inserted.
+Validating transformations of mapping m_CUSTOMER_ORDER_DATA...
+...transformation validation completed with no errors.
+Validating data flow of mapping m_CUSTOMER_ORDER_DATA...
+...data flow validation completed with no errors.
+Parsing mapping m_CUSTOMER_ORDER_DATA...
+...parsing completed with no errors.
+
+******** Mapping m_CUSTOMER_ORDER_DATA is VALID ********
+mapping  m_CUSTOMER_ORDER_DATA updated.
+------------------------------------------------------------------------------
+
+SAVING:
+
+
+
+
+------------------------------------------------------------------------------
+01/06/2020 08:47:14 ** Saving... Repository EDW_DEV, Folder DATA_STRUCTURES
+------------------------------------------------------------------------------
+source SALES_TRANSACTIONS:EMPLOYEES inserted.
+source SALES_TRANSACTIONS:SALES_CUSTOMERS inserted.
+source SALES_TRANSACTIONS:TRANSACTIONS inserted.
+source SALES_TRANSACTIONS:MARKETING_CUSTOMERS inserted.
+source SALES_TRANSACTIONS:CUSTOMER_ORDERS inserted.
+source SALES_TRANSACTIONS:CURRENT_EMPLOYEES inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 08:49:53 ** Saving... Repository EDW_DEV, Folder DATA_STRUCTURES
+------------------------------------------------------------------------------
+source OPERATIONAL_DATA_STORE:ODS_TRANS_REVENUE inserted.
+source OPERATIONAL_DATA_STORE:ODS_DEALER_SALES inserted.
+source OPERATIONAL_DATA_STORE:ODS_DAILY_SALES_DATES inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 08:51:14 ** Saving... Repository EDW_DEV, Folder DATA_STRUCTURES
+------------------------------------------------------------------------------
+source ENTERPRISE_DATA_WAREHOUSE:FACTS_ATOMIC inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 08:52:24 ** Saving... Repository EDW_DEV, Folder DATA_STRUCTURES
+------------------------------------------------------------------------------
+source FlatFile:SALES_TRANSACTIONS inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 08:58:54 ** Saving... Repository EDW_DEV, Folder DATA_STRUCTURES
+------------------------------------------------------------------------------
+source FlatFile:DAILY_TRANSACTIONS inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 09:01:51 ** Saving... Repository EDW_DEV, Folder DATA_STRUCTURES
+------------------------------------------------------------------------------
+Target ODS_DAILY_SALES_DATES inserted.
+Target ODS_HIGH_INCOME_FEMALE inserted.
+Target ODS_HIGH_INCOME_SENIOR inserted.
+Target ODS_TRANSACTIONS inserted.
+Target ODS_TRANS_REVENUE inserted.
+Target ODS_REV_DATE_NAME_PAYMENT inserted.
+Target ODS_HIGH_INCOME_MALE inserted.
+Target ODS_DEALER_SALES inserted.
+Target ODS_CUST_TRANS_DETAIL inserted.
+Target ODS_CUST_DEALER_DETAIL inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 09:02:56 ** Saving... Repository EDW_DEV, Folder DATA_STRUCTURES
+------------------------------------------------------------------------------
+Target DIM_EMPLOYEES inserted.
+Target DIM_TIME inserted.
+Target SUM_PRODUCT_DATE inserted.
+Target SUM_PRODUCT_MONTH inserted.
+Target SUM_PRODUCT_DEALERSHIP inserted.
+Target FACTS_ATOMIC inserted.
+Target DIM_PRODUCTS inserted.
+Target DIM_DEALERSHIP inserted.
+Target DIM_CUSTOMERS inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 09:07:10 ** Saving... Repository EDW_DEV, Folder LOAD_ODS
+------------------------------------------------------------------------------
+Shortcut to source SALES_TRANSACTIONS:Shortcut_to_TRANSACTIONS inserted.
+Validating transformations of mapping m_CURRENT_TRANS_REVENUE...
+...transformation validation completed with no errors.
+Validating data flow of mapping m_CURRENT_TRANS_REVENUE...
+...mapping  has no Targets.
+...Mapping must have at least one loadable target.
+...there are data flow validation errors.
+Parsing mapping m_CURRENT_TRANS_REVENUE...
+...parsing completed with no errors.
+
+******** Mapping m_CURRENT_TRANS_REVENUE is INVALID ********
+mapping  m_CURRENT_TRANS_REVENUE inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 09:16:25 ** Saving... Repository EDW_DEV, Folder LOAD_ODS
+------------------------------------------------------------------------------
+Validating transformations of mapping m_CURRENT_TRANS_REVENUE...
+...transformation validation completed with no errors.
+Validating data flow of mapping m_CURRENT_TRANS_REVENUE...
+...mapping  has no Targets.
+...Transformation exp_TRANS_REVENUE has no output links.
+...Mapping must have at least one loadable target.
+...there are data flow validation errors.
+Parsing mapping m_CURRENT_TRANS_REVENUE...
+...parsing completed with no errors.
+
+******** Mapping m_CURRENT_TRANS_REVENUE is INVALID ********
+mapping  m_CURRENT_TRANS_REVENUE updated.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 09:30:34 ** Saving... Repository EDW_DEV, Folder LOAD_ODS
+------------------------------------------------------------------------------
+Shortcut to target Shortcut_to_ODS_TRANS_REVENUE inserted.
+Validating transformations of mapping m_CURRENT_TRANS_REVENUE...
+...transformation validation completed with no errors.
+Validating data flow of mapping m_CURRENT_TRANS_REVENUE...
+...data flow validation completed with no errors.
+Parsing mapping m_CURRENT_TRANS_REVENUE...
+...parsing completed with no errors.
+
+******** Mapping m_CURRENT_TRANS_REVENUE is VALID ********
+mapping  m_CURRENT_TRANS_REVENUE updated.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/06/2020 11:22:14 ** Saving... Repository EDW_DEV, Folder LOAD_ODS
+------------------------------------------------------------------------------
+Shortcut to source SALES_TRANSACTIONS:Shortcut_to_CUSTOMER_ORDERS inserted.
+Shortcut to source FlatFile:Shortcut_to_SALES_TRANSACTIONS inserted.
+Validating transformations of mapping m_CUSTOMER_ORDER_DATA...
+Joiner Transformation jnr_CUSTOMER_ID_NO has empty condition.  Transformation is not valid.
+...there are invalid transformations.
+Validating data flow of mapping m_CUSTOMER_ORDER_DATA...
+...mapping  has no Targets.
+...Transformation jnr_CUSTOMER_ID_NO has no output links.
+...Mapping must have at least one loadable target.
+...Joiner jnr_CUSTOMER_ID_NO must have exactly two inputs.
+...there are data flow validation errors.
+Parsing mapping m_CUSTOMER_ORDER_DATA...
+...parsing completed with no errors.
+...Joiner jnr_CUSTOMER_ID_NO must have exactly two inputs.
+
+******** Mapping m_CUSTOMER_ORDER_DATA is INVALID ********
+mapping  m_CUSTOMER_ORDER_DATA inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/07/2020 05:49:27 ** Saving... Repository EDW_DEV, Folder LOAD_ODS
+------------------------------------------------------------------------------
+Shortcut to target Shortcut_to_ODS_TRANSACTIONS inserted.
+Validating transformations of mapping m_CUSTOMER_ORDER_DATA...
+...transformation validation completed with no errors.
+Validating data flow of mapping m_CUSTOMER_ORDER_DATA...
+...data flow validation completed with no errors.
+Parsing mapping m_CUSTOMER_ORDER_DATA...
+...parsing completed with no errors.
+
+******** Mapping m_CUSTOMER_ORDER_DATA is VALID ********
+mapping  m_CUSTOMER_ORDER_DATA updated.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/07/2020 07:46:44 ** Saving... Repository EDW_DEV, Folder LOAD_ODS
+------------------------------------------------------------------------------
+Validating transformations of mapping m_DEALER_SALES_DATA...
+...transformation validation completed with no errors.
+Validating data flow of mapping m_DEALER_SALES_DATA...
+...mapping  has no Targets.
+...Transformation exp_DEALER_SALES_DATA has no output links.
+...Mapping must have at least one loadable target.
+...there are data flow validation errors.
+Parsing mapping m_DEALER_SALES_DATA...
+Transformation: exp_DEALER_SALES_DATA Field: SALES_DESC
+<<PM Parse Error>> [SALES_DESC]: invalid symbol reference
+... >>>>SALES_DESC<<<<
+...there are parsing errors.
+
+******** Mapping m_DEALER_SALES_DATA is INVALID ********
+mapping  m_DEALER_SALES_DATA inserted.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/07/2020 08:41:21 ** Saving... Repository EDW_DEV, Folder LOAD_ODS
+------------------------------------------------------------------------------
+Validating transformations of mapping m_DEALER_SALES_DATA...
+...transformation validation completed with no errors.
+Validating data flow of mapping m_DEALER_SALES_DATA...
+...mapping  has no Targets.
+...Transformation exp_DEALER_SALES_DATA has no output links.
+...Mapping must have at least one loadable target.
+...there are data flow validation errors.
+Parsing mapping m_DEALER_SALES_DATA...
+...parsing completed with no errors.
+
+******** Mapping m_DEALER_SALES_DATA is INVALID ********
+mapping  m_DEALER_SALES_DATA updated.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/07/2020 08:44:06 ** Saving... Repository EDW_DEV, Folder LOAD_ODS
+------------------------------------------------------------------------------
+Shortcut to target Shortcut_to_ODS_DEALER_SALES inserted.
+Validating transformations of mapping m_DEALER_SALES_DATA...
+...transformation validation completed with no errors.
+Validating data flow of mapping m_DEALER_SALES_DATA...
+...data flow validation completed with no errors.
+Parsing mapping m_DEALER_SALES_DATA...
+...parsing completed with no errors.
+
+******** Mapping m_DEALER_SALES_DATA is VALID ********
+mapping  m_DEALER_SALES_DATA updated.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/07/2020 08:55:57 ** Saving... Repository EDW_DEV, Folder LOAD_ODS
+------------------------------------------------------------------------------
+Validating transformations of mapping m_CUSTOMER_ORDER_DATA...
+...transformation validation completed with no errors.
+Validating data flow of mapping m_CUSTOMER_ORDER_DATA...
+...data flow validation completed with no errors.
+Parsing mapping m_CUSTOMER_ORDER_DATA...
+...parsing completed with no errors.
+
+******** Mapping m_CUSTOMER_ORDER_DATA is VALID ********
+mapping  m_CUSTOMER_ORDER_DATA updated.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/07/2020 09:13:25 ** Saving... Repository EDW_DEV, Folder LOAD_ODS
+------------------------------------------------------------------------------
+Validating transformations of mapping m_DEALER_SALES_DATA...
+...transformation validation completed with no errors.
+Validating data flow of mapping m_DEALER_SALES_DATA...
+...data flow validation completed with no errors.
+Parsing mapping m_DEALER_SALES_DATA...
+...parsing completed with no errors.
+
+******** Mapping m_DEALER_SALES_DATA is VALID ********
+mapping  m_DEALER_SALES_DATA updated.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/07/2020 09:50:23 ** Saving... Repository EDW_DEV, Folder LOAD_ODS
+------------------------------------------------------------------------------
+Shortcut to source OPERATIONAL_DATA_STORE:Shortcut_to_ODS_TRANS_REVENUE inserted.
+Shortcut to source OPERATIONAL_DATA_STORE:Shortcut_to_ODS_DEALER_SALES inserted.
+Shortcut to target Shortcut_to_ODS_CUST_TRANS_DETAIL inserted.
+Shortcut to target Shortcut_to_ODS_CUST_DEALER_DETAIL inserted.
+Transformation Lookup Procedure:lkp_STATE_CODES updated.
+Transformation Expression:exp_TRANS_REVENUE updated.
+Validating transformations of mapping m_CUST_TRANS_DEALER_DETAILS...
+...transformation validation completed with no errors.
+Validating data flow of mapping m_CUST_TRANS_DEALER_DETAILS...
+...data flow validation completed with no errors.
+Parsing mapping m_CUST_TRANS_DEALER_DETAILS...
+...parsing completed with no errors.
+
+******** Mapping m_CUST_TRANS_DEALER_DETAILS is VALID ********
+mapping  m_CUST_TRANS_DEALER_DETAILS inserted.
+Validating transformations of mapping m_DEALER_SALES_DATA...
+...transformation validation completed with no errors.
+Validating data flow of mapping m_DEALER_SALES_DATA...
+...data flow validation completed with no errors.
+Parsing mapping m_DEALER_SALES_DATA...
+...parsing completed with no errors.
+
+******** Mapping m_DEALER_SALES_DATA is VALID ********
+mapping  m_DEALER_SALES_DATA updated.
+Validating transformations of mapping m_CURRENT_TRANS_REVENUE...
+...transformation validation completed with no errors.
+Validating data flow of mapping m_CURRENT_TRANS_REVENUE...
+...data flow validation completed with no errors.
+Parsing mapping m_CURRENT_TRANS_REVENUE...
+...parsing completed with no errors.
+
+******** Mapping m_CURRENT_TRANS_REVENUE is VALID ********
+mapping  m_CURRENT_TRANS_REVENUE updated.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+01/07/2020 11:15:49 ** Saving... Repository EDW_DEV, Folder LOAD_ODS
+------------------------------------------------------------------------------
+Shortcut to source SALES_TRANSACTIONS:Shortcut_to_MARKETING_CUSTOMERS inserted.
+Shortcut to source SALES_TRANSACTIONS:Shortcut_to_SALES_CUSTOMERS inserted.
+Shortcut to target Shortcut_to_ODS_HIGH_INCOME_SENIOR inserted.
+Shortcut to target Shortcut_to_ODS_HIGH_INCOME_MALE inserted.
+Shortcut to target Shortcut_to_ODS_HIGH_INCOME_FEMALE inserted.
+Validating transformations of mapping m_CUSTOMER_CATEGORIES...
+...transformation validation completed with no errors.
+Validating data flow of mapping m_CUSTOMER_CATEGORIES...
+...data flow validation completed with no errors.
+Parsing mapping m_CUSTOMER_CATEGORIES...
+...parsing completed with no errors.
+
+******** Mapping m_CUSTOMER_CATEGORIES is VALID ********
+mapping  m_CUSTOMER_CATEGORIES inserted.
+------------------------------------------------------------------------------
+
