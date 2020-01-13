@@ -26,3 +26,19 @@ Un - Connected Lookup allowes us to return only one Port(column).
 
 
 I our source is a database, informatica recommends us to use Source Qualifier for transformation
+
+
+
+There are 4 type of update
+
+
+-> update as a insert
+-> update as a update
+-> update as a delete
+-> update as a reject
+
+
+
+SCD TYPE1 : Delta Load
+
+SCD TYPE2 : PRESERVE HISTORY AND ADD INCREMENTAL LOAD

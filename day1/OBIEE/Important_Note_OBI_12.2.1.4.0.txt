@@ -1,0 +1,19 @@
+
+
+When upgrading Oracle Business Intelligence from a previous 12c release to 12.2.1.4.0, you might find that the pre-upgrade readiness check fails. Apply the following patches to the WebLogic Server before you install Oracle Business Intelligence:
+ 
+Patch number: 27823500
+ 
+Patch number: 27401639
+ 
+Patch number: 27479453
+ 
+For more detailed information, see "Installing the Product Distributions" in Upgrading Oracle Business Intelligence:
+https://docs.oracle.com/middleware/bi12214/lcm/OBIUP/GUID-93B3A0DC-7546-4ABB-946E-593B3AAE444D.htm#OBIUP-GUID-F20825E7-07E1-4795-9848-55EAD5DDA4E8
+ 
+Consult the documentation for complete details:
+https://docs.oracle.com/middleware/bi12214/bisuite/index.html
+
+
+
+
